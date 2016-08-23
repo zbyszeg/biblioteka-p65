@@ -181,7 +181,7 @@ select
 #szukaj
 {
 	background-color: white;
-	width: 500px;
+	width: 410px;
 	padding: 35px;
 	margin-left: auto;
 	margin-right: auto;
@@ -203,13 +203,13 @@ select
 
 #wyniki > a
 {
-	color: #001B37;
+	color: #1E90FF;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 16px;
 }
 
 #wyniki > a:hover
 {
-	color: darkgray;
+	color: gray;
 	text-decoration: underline overline;
 }

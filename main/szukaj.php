@@ -46,7 +46,17 @@
 			echo "Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
 			echo "<br>Autor: ".$myrow["autor"];
 			echo "<br>Tytuł: ".$myrow["tytul"];
-			echo "<br>Status: ".$myrow["id_statusu"];	
+			
+			switch ($myrow["id_statusu"])
+			{
+				case 1:
+					echo "<br>Status: Dostępna";
+				break;
+				
+				case 2:
+					echo "<br>Status: Wypożyczona";
+				break;
+			}	
 			echo "</p>";
 			echo "<hr />";
 			}
