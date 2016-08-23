@@ -27,20 +27,13 @@
 	</div>
 	
 	<div id="pojemnik">
-		<div id="forma">
-			<form>
-			
-				<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
-			
-				<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" >
-			
-				<input type="submit" value="Zaloguj się">
-			
-			</form><br/>
-			<img src="img/logoP.gif" style="width: 100px"/>
-		</div>
-		<br /><br />
-		<a href="#">Przeglądaj katalog</a><br/>
+		<?php
+			$page = isset($_GET['p']) ? basename($_GET['p']) : 'main';
+ 
+			$file = 'main/' . $page . '.php';
+ 
+			include $file;
+		?>
 	</div>
 	
 	<div id="stopka">Perełkowa Biblioteka &copy; Przedszkole Samorządowe nr 65 &#8222;Perełka&#8221; w Krakowie</div>

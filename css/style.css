@@ -79,16 +79,20 @@ body
 #pojemnik
 {
 	min-height:  600px;
-	text-align: center;
 	font-family: 'Oxygen', sans-serif;
 }
 
-#pojemnik > a
+#mainp
+{
+	text-align: center;
+}
+
+#mainp > a
 {
 	color: #001B37;
 }
 
-#pojemnik > a:hover
+#mainp > a:hover
 {
 	color: darkgray;
 	text-decoration: underline overline;
@@ -157,4 +161,29 @@ input[type=submit]
 input[type=submit]:hover
 {
 	background-color: #56ACFF;
+}
+
+select
+{
+	width: 150px;
+	background-color: #efefef;
+	color: #4D4D4D;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 5px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#szukaj
+{
+	background-color: white;
+	width: 500px;
+	padding: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
 }
