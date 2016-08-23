@@ -35,7 +35,5 @@
 			include $file;
 		?>
 	</div>
-	
-	<div id="stopka">Perełkowa Biblioteka &copy; Przedszkole Samorządowe nr 65 &#8222;Perełka&#8221; w Krakowie</div>
 </body>
 </html>
