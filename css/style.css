@@ -1,7 +1,6 @@
 body
 {
-	/* Background pattern from subtlepatterns.com */
-	background-image: url("../img/sea.jpg");
+	background-image: url("../img/tlo.jpg");
 	background-attachment: fixed;
 	margin: 0 !important;
 }
@@ -10,7 +9,7 @@ body
 {
 	width: 100%;
 	background-color: rgb(130, 230, 255);
-	background-color: rgba(130, 230, 255, .5);
+	background-color: rgba(130, 230, 255, .3);
 	margin-bottom: 5px;
 	height: 50px;
 }
@@ -30,7 +29,7 @@ body
 #dom:hover
 {
 	cursor: pointer;
-	background-color: #00668c;
+	background-color: #018afe;
 }
 
 #mail
@@ -48,7 +47,7 @@ body
 #mail:hover
 {
 	cursor: pointer;
-	background-color: #00668c;
+	background-color: #018afe;
 }
 
 #logo
@@ -61,7 +60,7 @@ body
 
 #logo:hover
 {
-	background-color: #00668c;
+	background-color: #018afe;
 }
 
 #fb
@@ -74,23 +73,35 @@ body
 
 #fb:hover
 {
-	background-color: #00668c;
+	background-color: #018afe;
 }
 
 #pojemnik
 {
-	min-height:  550px;
+	min-height:  600px;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#pojemnik > a
+{
+	color: #001B37;
+}
+
+#pojemnik > a:hover
+{
+	color: darkgray;
+	text-decoration: underline overline;
 }
 
 #stopka
 {
-	background-color: rgb(130, 230, 255);
-	background-color: rgba(130, 230, 255, .7);
+	background-color: #47A4FF;
 	text-align: center;
-	color: #3c3c3c;
+	color: #001B37;
 	margin-bottom: 10px;
-	font-family: 'Rubik', sans-serif;
-	font-size: 12px;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 13px;
 }
 
 .sticky
@@ -100,4 +111,50 @@ body
 	top: 0;
 	left: 0;
 	z-index: 100;
+}
+
+#forma
+{
+	background-color: white;
+	width: 300px;
+	padding: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+}
+
+input[type=text],
+input[type=password]
+{
+	width: 300px;
+	background-color: #efefef;
+	color: #4D4D4D;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 16px;
+	padding: 5px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 5px;
+	text-align: center;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #1E90FF;
+	font-size:16px;
+	color: white;
+	padding: 5px;
+	margin-top: 15px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	outline: none;
+}
+
+input[type=submit]:hover
+{
+	background-color: #56ACFF;
 }
