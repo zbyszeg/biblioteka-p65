@@ -103,7 +103,7 @@ body
 	background-color: #47A4FF;
 	text-align: center;
 	color: #001B37;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 13px;
 }
@@ -186,4 +186,30 @@ select
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 75px;
+}
+
+#wyniki
+{
+	background-color: white;
+	width: 700px;
+	padding: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: tahoma;
+	font-size: 14px;
+}
+
+#wyniki > a
+{
+	color: #001B37;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+}
+
+#wyniki > a:hover
+{
+	color: darkgray;
+	text-decoration: underline overline;
 }
