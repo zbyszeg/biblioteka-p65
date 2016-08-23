@@ -10,10 +10,10 @@
 		<?php
 
 		//Nawiazujemy polaczenie z baza, podajac adres hosta, login oraz haslo.
-		$conn=mysqli_connect("localhost", "root", "");
+		$conn=mysqli_connect("mysql.hostinger.pl", "u432478404_bibli", "65Perełka");
 
 		//Wybieramy interesujaca nas baze.
-		mysqli_select_db($conn,"biblioteka");
+		mysqli_select_db($conn,"u432478404_bibli");
 		
 		//ustawiamy poprawne wyświetlanie
 		mysqli_query($conn,"SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
