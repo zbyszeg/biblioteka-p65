@@ -9,7 +9,7 @@
 			<input type="submit" value="Zaloguj się">
 				
 		</form><br/>
-		<img src="img/logoP.gif" style="width: 100px"/>
+		<img src="img/logoP.gif" style="width: 150px"/>
 	</div>
 	<br /><br />
 	<a href="Przeglądaj">Przeglądaj katalog</a><br/>
