@@ -1,0 +1,103 @@
+body
+{
+	/* Background pattern from subtlepatterns.com */
+	background-image: url("../img/sea.jpg");
+	background-attachment: fixed;
+	margin: 0 !important;
+}
+
+#menu
+{
+	width: 100%;
+	background-color: rgb(130, 230, 255);
+	background-color: rgba(130, 230, 255, .5);
+	margin-bottom: 5px;
+	height: 50px;
+}
+
+#dom
+{
+	float: left;
+	border-right: dotted 1px white;
+	padding: 5px;
+}
+
+#dom > a
+{
+	color: white;
+}
+
+#dom:hover
+{
+	cursor: pointer;
+	background-color: #00668c;
+}
+
+#mail
+{
+	float: left;
+	border-right: dotted 1px white;
+	padding: 5px;
+}
+
+#mail > a
+{
+	color: white;
+}
+
+#mail:hover
+{
+	cursor: pointer;
+	background-color: #00668c;
+}
+
+#logo
+{
+	float: left;
+	border-right: dotted 1px white;
+	padding: 5px;
+	color: white;
+}
+
+#logo:hover
+{
+	background-color: #00668c;
+}
+
+#fb
+{
+	float:left;
+	border-right: dotted 1px white;
+	padding: 5px;
+	color: white;
+}
+
+#fb:hover
+{
+	background-color: #00668c;
+}
+
+#pojemnik
+{
+	min-height:  550px;
+}
+
+#stopka
+{
+	background-color: rgb(130, 230, 255);
+	background-color: rgba(130, 230, 255, .7);
+	text-align: center;
+	color: #3c3c3c;
+	margin-bottom: 10px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 12px;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
