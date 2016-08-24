@@ -50,7 +50,7 @@
 			switch ($myrow["id_statusu"])
 			{
 				case 1:
-					echo '<br>Status: <span style="font-color: green">Dostępna</span>';
+					echo '<br>Status: <span style="color: green">Dostępna</span>';
 				break;
 				
 				case 2:
