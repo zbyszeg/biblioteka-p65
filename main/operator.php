@@ -12,9 +12,7 @@
 
 <div id="menubar">
 <?php
-
 	echo '<a href="Wyloguj">Wyloguj się!</a>';
-	
 ?>
 </div>
 <div id="mainbib">
