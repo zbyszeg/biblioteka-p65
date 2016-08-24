@@ -24,9 +24,9 @@
 		</nav>
 		<section id="mainbib">
 			<?php
-				$page = isset($_GET['b']) ? basename($_GET['b']) : 'katalog_bib';
- 				$file = 'bib/' . $page . '.php';
- 				include $file;
+				$strona = isset($_GET['b']) ? basename($_GET['b']) : 'katalog_bib';
+ 				$plik = 'bib/' . $page . '.php';
+ 				include $plik;
 			?>
 		</section>
 		<div style="clear: both;"></div>
