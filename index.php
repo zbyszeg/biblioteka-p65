@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div id="menu">
-			<div id="dom"><a href="http://biblioteka-p65.pl/"><i class="icon-home"></i></a></div>
+			<div id="dom"><a href="StronaGłówna"><i class="icon-home"></i></a></div>
 			<a href="http://perelkakrakow.pl/" target="=blank"><div id="logo"><i class="icon-home-1"></i></div></a>
 			<div id="mail"><a href="mailto:przedszkole-65@wp.pl"><i class="icon-mail"></i></a></div>
 			<a href="https://www.facebook.com/perelkakrakow" target="=blank"><div id="fb"><i class="icon-facebook-1"></i></div></a>
