@@ -17,12 +17,14 @@
 </head>
 
 <body>
-	
+
+<div id="menubar">
 <?php
 
 	echo '<p>[ <a href="Wyloguj">Wyloguj się!</a> ]</p>';
 	
 ?>
+</div>
 
 </body>
 </html>
