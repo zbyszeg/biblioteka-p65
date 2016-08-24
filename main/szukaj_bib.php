@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div id="wyniki">
-		<a href="Przeglądaj">Powrót do wyszukiwarki</a><br /><br />
+		<a href="Wyszukaj">Powrót do wyszukiwarki</a><br /><br />
 		<hr />
 		<?php
 

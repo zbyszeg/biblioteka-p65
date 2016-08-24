@@ -12,4 +12,4 @@ RewriteRule Bibliotekarz ?p=operator
 RewriteRule StronaGłówna ?p=main
 RewriteRule Wyloguj ?p=logout
 RewriteRule Wyszukaj ?b=katalog_bib
-RewriteRule Pozycje ?p=szukaj_bib
+RewriteRule Pozycje ?b=szukaj_bib
