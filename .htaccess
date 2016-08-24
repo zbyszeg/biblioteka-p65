@@ -7,3 +7,4 @@ Deny from all
 RewriteEngine on
 RewriteRule Przeglądaj ?p=katalog
 RewriteRule Wyniki ?p=szukaj
+RewriteRule Logowanie ?p=zaloguj

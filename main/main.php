@@ -1,10 +1,10 @@
 <div id="mainp">
 	<div id="forma">
-		<form>
+		<form action="Logowanie" method="post">
 				
-			<input type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
+			<input type="text" name="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
 				
-			<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" >
+			<input type="password" name="haslo" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" >
 				
 			<input type="submit" value="Zaloguj się">
 				
