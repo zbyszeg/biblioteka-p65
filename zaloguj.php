@@ -25,7 +25,7 @@
 		$haslo = htmlentities($haslo, ENT_QUOTES, "UTF-8");
 	
 		if ($rezultat == @$polaczenie->query(
-		sprintf("SELECT * FROM uzytkownicy WHERE user='$login' AND pass='$haslo'",
+		sprintf("SELECT * FROM uzytkownicy WHERE user='%s' AND pass='%s'",
 		mysqli_real_escape_string($polaczenie,$login),
 		mysqli_real_escape_string($polaczenie,$haslo))))
 		{
