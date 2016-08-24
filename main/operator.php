@@ -25,7 +25,7 @@
 		<section id="mainbib">
 			<?php
 				$page = isset($_GET['b']) ? basename($_GET['b']) : 'katalog_bib';
- 				$file = 'main/' . $page . '.php';
+ 				$file = 'bib/' . $page . '.php';
  				include $file;
 			?>
 		</section>
