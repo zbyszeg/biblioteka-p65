@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	
+	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
+	{
+		header('Location: operator.php');
+		exit();
+	}
+?>
+
 <div id="mainp">
 	<div id="forma">
 		<form action="Logowanie" method="post">
@@ -8,7 +18,12 @@
 				
 			<input type="submit" value="Zaloguj się">
 				
-		</form><br/>
+		</form>
+		<?php
+			if(isset($_SESSION['blad']))
+				echo $_SESSION['blad'];
+		?>
+		<br/>
 		<img src="img/logoP.gif" style="width: 150px"/>
 	</div>
 	<br /><br />
