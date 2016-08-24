@@ -221,11 +221,33 @@ select
 	border-bottom: 1px solid #fff;
 }
 
+#kontener
+{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+}
+
 #menubar
 {
-	width: 500px;
+	float: left;
+	width: 250px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgb(130, 230, 255);
 	background-color: rgba(130, 230, 255, .3);
+	margin-right: 5px;
+	border-radius: 5px;
+	color: white;
+}
+
+#main
+{
+	width: 925px;
+	float: left;
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: justify;
 }
