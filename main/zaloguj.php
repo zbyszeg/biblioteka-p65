@@ -57,7 +57,7 @@
 			
 		}
 		
-		$polaczenie->close();
+		$conn->close();
 	}
 	
 ?>
