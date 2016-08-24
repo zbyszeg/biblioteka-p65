@@ -7,6 +7,3 @@ Deny from all
 RewriteEngine on
 RewriteRule Przeglądaj ?p=katalog
 RewriteRule Wyniki ?p=szukaj
-RewriteRule Logowanie ?p=zaloguj
-RewriteRule Bibliotekarz ?p=operator
-RewriteRule main ?p=main
