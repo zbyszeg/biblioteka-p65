@@ -175,7 +175,7 @@ select
 	box-sizing: border-box;
 	outline: none;
 	margin-top: 5px;
-	text-align: center;
+	text-align: left;
 }
 
 #szukaj
