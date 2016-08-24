@@ -19,7 +19,7 @@
 </div>
 <div id="mainbib">
 	<?php
-		$page = isset($_GET['b']) ? basename($_GET['b']) : 'szukaj_bib';
+		$page = isset($_GET['b']) ? basename($_GET['b']) : 'katalog_bib';
  
 		$file = 'main/' . $page . '.php';
  

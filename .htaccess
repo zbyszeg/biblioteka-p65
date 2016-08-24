@@ -11,4 +11,4 @@ RewriteRule Logowanie ?p=zaloguj
 RewriteRule Bibliotekarz ?p=operator
 RewriteRule StronaGłówna ?p=main
 RewriteRule Wyloguj ?p=logout
-RewriteRule Rezultat ?b=szukaj_bib
+RewriteRule Wyszukaj ?b=katalog_bib
