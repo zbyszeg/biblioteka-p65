@@ -10,7 +10,7 @@
 
 <div id="mainp">
 	<div id="forma">
-		<form action="Logowanie" method="post">
+		<form action="zaloguj.php" method="post">
 				
 			<input type="text" name="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
 				
