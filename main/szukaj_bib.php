@@ -30,6 +30,22 @@
 		  case "tytul":
 		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
 		  break;
+		  
+		  case "wydaw":
+		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  break;
+		  
+		  case "rok_wyd":
+		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  break;
+		  
+		  case "nr_ewid":
+		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  break;
+		  
+		  case "czytelnik":
+		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  break;
 		}
 
 		/* 
@@ -46,8 +62,10 @@
 			echo "Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
 			echo "<br>Autor: ".$myrow["autor"];
 			echo "<br>Tytuł: ".$myrow["tytul"];
+			echo "<br>Wydawnictwo: ".$myrow["wydawnictwo"];
+			echo "<br>Rok wydania: ".$myrow["rok_wydania"];
 			
-			switch ($myrow["id_statusu"])
+			switch ($myrow["status"])
 			{
 				case 1:
 					echo '<br>Status: <span style="color: green">Dostępna</span>';
@@ -56,7 +74,8 @@
 				case 2:
 					echo '<br>Status: <span style="color: red">Wypożyczona</span>';
 				break;
-			}	
+			}
+			echo "<br>Czytelnik: ".$myrow["czytelnik"];
 			echo "</p>";
 			echo "<hr />";
 			}
