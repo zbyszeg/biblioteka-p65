@@ -54,7 +54,7 @@
 				break;
 				
 				case 2:
-					echo "<br>Status: Wypożyczona";
+					echo '<br>Status: <span style="color: red">Wypożyczona</span>';
 				break;
 			}	
 			echo "</p>";
