@@ -3,14 +3,14 @@
 	
 	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true))
 	{
-		header('Location: operator.php');
+		header('Location: Bibliotekarz');
 		exit();
 	}
 ?>
 
 <div id="mainp">
 	<div id="forma">
-		<form action="zaloguj.php" method="post">
+		<form action="Logowanie" method="post">
 				
 			<input type="text" name="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
 				
@@ -21,7 +21,10 @@
 		</form>
 		<?php
 			if(isset($_SESSION['blad']))
+			{
 				echo $_SESSION['blad'];
+				unset($_SESSION['blad']);
+			}
 		?>
 		<br/>
 		<img src="img/logoP.gif" style="width: 150px"/>
