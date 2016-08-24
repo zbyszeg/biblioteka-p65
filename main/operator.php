@@ -14,7 +14,7 @@
 			
 			<?php echo '<a href="Wyloguj">Wyloguj się!</a>'; ?><br />
 			<hr />
-			<a href="#">Wyszukaj pozycje</a><br />
+			<a href="Wyszukaj">Wyszukaj pozycje</a><br />
 			<a href="#">Dodaj pozycję</a><br />
 			<a href="#">Edytuj pozycję</a><br />
 			<a href="#">Usuń pozycję</a><br />
