@@ -250,6 +250,12 @@ select
 	padding: 5px;
 }
 
+#menubar > a:hover
+{
+	color: darkgray;
+	text-decoration: underline overline;
+}
+
 #main
 {
 	width: 925px;
