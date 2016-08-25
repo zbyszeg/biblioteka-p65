@@ -4,7 +4,7 @@
 	
 	if ((!isset($_POST['login'])) || (!isset($_POST['haslo'])))
 	{
-		header('Location: StronaGłówna');
+		header('Location: index.php');
 		exit();
 	}
 
@@ -39,12 +39,12 @@
 				
 				unset($_SESSION['blad']);
 				$rezultat->free_result();
-				header('Location: Bibliotekarz');
+				header('Location: bib/bibliotekarz.php');
 				
 			} else {
 				
 				$_SESSION['blad'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
-				header('Location: StronaGłówna');
+				header('Location: index.php');
 				
 			}
 			
