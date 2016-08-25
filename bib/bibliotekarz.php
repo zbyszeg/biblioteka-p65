@@ -39,7 +39,7 @@
 	<div id="kontener">
 		<nav id="menubar">
 			
-			<?php echo '<a href="Wyloguj">Wyloguj się</a>'; ?><br />
+			<?php echo '<a href="../logout.php">Wyloguj się</a>'; ?><br />
 			<hr />
 			<a href="?b=katalog_bib">Wyszukaj pozycje</a><br />
 			<a href="#">Dodaj pozycję</a><br />
