@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<div id="wyniki">
+	<div class="wyniki">
 		<a href="Wyszukaj">Powrót do wyszukiwarki</a><br /><br />
 		<hr />
 		<?php
