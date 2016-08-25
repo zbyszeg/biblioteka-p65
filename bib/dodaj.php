@@ -11,4 +11,8 @@
 		</table>
 		<input type="submit" name="dodaj" value="Dodaj książkę" style="width: 200px">
 	</form>
+	<?php
+		if(isset($_SESSION['pusto']))	
+			echo $_SESSION['pusto'];
+	?>
 </div>

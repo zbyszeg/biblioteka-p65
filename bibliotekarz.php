@@ -4,7 +4,7 @@
 	
 	if (!isset($_SESSION['zalogowany']))
 	{
-		header('Location: index.php');
+		header('Location: StronaGłówna');
 		exit();
 	}
 	

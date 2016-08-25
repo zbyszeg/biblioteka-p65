@@ -30,23 +30,23 @@
 		  break;
 		  
 		  case "wydaw":
-		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  $result=mysqli_query($conn,"select * from ksiazki where wydawnictwo like '%$wartosc%'");
 		  break;
 		  
 		  case "isbn":
-		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  $result=mysqli_query($conn,"select * from ksiazki where isbn like '%$wartosc%'");
 		  break;
 		  
 		  case "rok_wyd":
-		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  $result=mysqli_query($conn,"select * from ksiazki where rok_wydania like '%$wartosc%'");
 		  break;
 		  
 		  case "nr_ewid":
-		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  $result=mysqli_query($conn,"select * from ksiazki where nr_ewidencyjny like '%$wartosc%'");
 		  break;
 		  
 		  case "czytelnik":
-		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  $result=mysqli_query($conn,"select * from ksiazki where czytelnik like '%$wartosc%'");
 		  break;
 		}
 

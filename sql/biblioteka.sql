@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 25 Sie 2016, 15:06
--- Wersja serwera: 10.1.13-MariaDB
--- Wersja PHP: 7.0.8
+-- Czas generowania: 25 Sie 2016, 20:20
+-- Wersja serwera: 10.1.10-MariaDB
+-- Wersja PHP: 7.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -44,7 +44,7 @@ CREATE TABLE `ksiazki` (
 --
 
 INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawnictwo`, `isbn`, `rok_wydania`, `status`, `czytelnik`, `data`) VALUES
-(1, 939, 'Góra Zbigniew', 'Active Directory w systemach wolnego oprogramowania', 'Helion', '', 2015, 1, '', '0000-00-00'),
+(1, 940, 'Góra Zbigniew', 'Active Directory w systemach wolnego oprogramowania', 'Helion', '', 2015, 1, '', '0000-00-00'),
 (2, 567, 'Adams Christine, Butch Robert J.', 'Świetny ze mnie dzieciak! O poczuciu własnej wartości', NULL, '', 0, 1, '', '0000-00-00'),
 (3, 808, 'Adamska Elżbieta – red.', 'Gospodarstwo i życie na wsi', NULL, '', 0, 1, '', '0000-00-00'),
 (4, 586, 'Al-Khamisz Danuta', 'Rozwijanie pojęć przyrody nieożywionej u dzieci sześcioletnich', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -804,7 +804,12 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (757, 927, '', 'Kodeks pracy.', NULL, '', NULL, 1, '', '0000-00-00'),
 (758, 928, '', 'Kodeks rodzinny i opiekuńczy.', NULL, '', NULL, 1, '', '0000-00-00'),
 (759, 929, '', 'Konstytucja Rzeczypospolitej Polskiej', NULL, '', NULL, 1, '', '0000-00-00'),
-(760, 938, 'Materiały z XXXII Zjazdu Naukowego Polskiego Towarzystwa Psychologicznego', 'Żyć wspólnie', NULL, '', NULL, 1, '', '0000-00-00');
+(760, 938, 'Materiały z XXXII Zjazdu Naukowego Polskiego Towarzystwa Psychologicznego', 'Żyć wspólnie', NULL, '', NULL, 1, '', '0000-00-00'),
+(761, 1000, 'Kowalski Jan', 'Książka testowa 1', 'Próbne', '', 2016, 1, '', '0000-00-00'),
+(762, 1001, 'Słodowy Adam', 'Robótki ręczne', 'Znaq', '', 2016, 1, '', '0000-00-00'),
+(763, 1002, 'Adam Nowak', 'Jakiś tytuł', 'Obce', '', 2012, 1, '', '0000-00-00'),
+(768, 1004, 'Biały Zenek', 'Jakai jsadj', '', '', 0, 1, '', '0000-00-00'),
+(767, 1003, 'Testowy Roman', 'Giedymin', '', '', 0, 1, '', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -850,7 +855,7 @@ ALTER TABLE `uzytkownicy`
 -- AUTO_INCREMENT dla tabeli `ksiazki`
 --
 ALTER TABLE `ksiazki`
-  MODIFY `id_ksiazki` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=761;
+  MODIFY `id_ksiazki` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=769;
 --
 -- AUTO_INCREMENT dla tabeli `uzytkownicy`
 --

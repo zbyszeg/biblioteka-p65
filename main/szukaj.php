@@ -32,7 +32,7 @@
 		  break;
 		  
 		  case "isbn":
-		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  $result=mysqli_query($conn,"select * from ksiazki where isbn like '%$wartosc%'");
 		  break;
 		}
 
