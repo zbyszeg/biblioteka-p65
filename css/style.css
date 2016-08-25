@@ -77,7 +77,6 @@ body
 }
 
 #pojemnik
-#kontener
 {
 	font-family: 'Oxygen', sans-serif;
 }
@@ -126,6 +125,7 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 75px;
+	border-radius: 3px;
 }
 
 input[type=text],
@@ -166,7 +166,7 @@ input[type=submit]:hover
 
 select
 {
-	width: 150px;
+	width: 180px;
 	background-color: #efefef;
 	color: #4D4D4D;
 	border: 1px solid #ddd;
@@ -179,7 +179,7 @@ select
 	text-align: left;
 }
 
-#szukaj
+.szukaj
 {
 	background-color: white;
 	width: 410px;
@@ -187,6 +187,9 @@ select
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 75px;
+	font-size: 14px;
+	font-family: 'Oxygen', sans-serif;
+	border-radius: 3px;
 }
 
 .wyniki
@@ -200,6 +203,7 @@ select
 	margin-bottom: 50px;
 	font-family: calibri;
 	font-size: 16px;
+	border-radius: 3px;
 }
 
 .wyniki > a
@@ -236,24 +240,33 @@ select
 	width: 250px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgb(130, 230, 255);
-	background-color: rgba(130, 230, 255, .3);
+	background-color: rgb(0, 104, 239);
+	background-color: rgba(0, 104, 239, .5);
 	margin-right: 5px;
-	border-radius: 5px;
+	border-radius: 3px;
 	color: white;
+	border: solid 1px;
 }
 
 #menubar > a
 {
-	color: #001B37;
-	font-family: 'Oxygen', sans-serif;
-	font-size: 14px;
-	padding: 5px;
+	color: black;
+	font-family: 'Calibri', sans-serif;
+	font-size: 16px;
+	padding: 10px;
+}
+
+#menubar > hr
+{
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #menubar > a:hover
 {
-	color: darkgray;
+	color: lightgray;
 	text-decoration: underline overline;
 }
 

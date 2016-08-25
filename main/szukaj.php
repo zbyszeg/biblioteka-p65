@@ -10,10 +10,10 @@
 		<?php
 
 		//Nawiazujemy polaczenie z baza, podajac adres hosta, login oraz haslo.
-		$conn=mysqli_connect("mysql.hostinger.pl", "u432478404_bibli", "65Perełka");
+		$conn=mysqli_connect("localhost", "root", "");
 
 		//Wybieramy interesujaca nas baze.
-		mysqli_select_db($conn,"u432478404_bibli");
+		mysqli_select_db($conn,"biblioteka");
 		
 		//ustawiamy poprawne wyświetlanie
 		mysqli_query($conn,"SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
@@ -30,6 +30,10 @@
 		  case "tytul":
 		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
 		  break;
+		  
+		  case "isbn":
+		  $result=mysqli_query($conn,"select * from ksiazki where tytul like '%$wartosc%'");
+		  break;
 		}
 
 		/* 
@@ -38,28 +42,33 @@
 		Jej klucze odpowiadaja nazwom kolumn tabeli w bazie. 
 		*/
 
-		while ($myrow = mysqli_fetch_assoc($result))
+		if(mysqli_fetch_assoc($result))
+		{
+			while ($myrow = mysqli_fetch_assoc($result))
 			{
 
-		//Wyswietlamy kolejne elementy tablicy.
-			echo "<p>";
-			echo "Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
-			echo "<br>Autor: ".$myrow["autor"];
-			echo "<br>Tytuł: ".$myrow["tytul"];
-			
-			switch ($myrow["id_statusu"])
-			{
-				case 1:
-					echo '<br>Status: <span style="color: green">Dostępna</span>';
-				break;
+			//Wyswietlamy kolejne elementy tablicy.
+				echo "<p>";
+				echo "Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
+				echo "<br>Autor: ".$myrow["autor"];
+				echo "<br>Tytuł: ".$myrow["tytul"];
+				echo "<br>Nr ISBN: ".$myrow["isbn"];
 				
-				case 2:
-					echo '<br>Status: <span style="color: red">Wypożyczona</span>';
-				break;
-			}	
-			echo "</p>";
-			echo "<hr />";
+				switch ($myrow["status"])
+				{
+					case 1:
+						echo '<br>Status: <span style="color: green">Dostępna</span>';
+					break;
+					
+					case 2:
+						echo '<br>Status: <span style="color: red">Wypożyczona</span>';
+					break;
+				}	
+				echo "</p>";
+				echo "<hr />";
 			}
+		}
+		else echo '<br/ ><span style="font-size: 18px; color: maroon;">Nie ma takiej książki</span>';
 		?>
 	</div>	
 </body>

@@ -9,7 +9,6 @@
 	}
 
 ?>
-
 <div id="mainp">
 	<div id="forma">
 		<form action="zaloguj.php" method="post">

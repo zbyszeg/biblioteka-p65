@@ -9,4 +9,6 @@ RewriteRule Przeglądaj ?p=katalog
 RewriteRule Wyniki ?p=szukaj
 RewriteRule Logowanie ?p=zaloguj
 RewriteRule StronaGłówna index.php
-RewriteRule Bibliotekarz bib/bibliotekarz.php
+RewriteRule Bibliotekarz bibliotekarz.php
+RewriteRule Katalog Bibliotekarz?b=katalog_bib
+RewriteRule Znajdź Bibliotekarz?b=szukaj_bib
