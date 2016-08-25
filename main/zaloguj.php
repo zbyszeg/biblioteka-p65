@@ -39,7 +39,7 @@
 				
 				unset($_SESSION['blad']);
 				$rezultat->free_result();
-				header('Location: Bibliotekarz');
+				header('Location: ../bib/bibliotekarz.php');
 				
 			} else {
 				
