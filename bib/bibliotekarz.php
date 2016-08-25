@@ -4,7 +4,7 @@
 	
 	if (!isset($_SESSION['zalogowany']))
 	{
-		header('Location: StronaGłówna');
+		header('Location: ../index.php');
 		exit();
 	}
 	
@@ -39,7 +39,7 @@
 	<div id="kontener">
 		<nav id="menubar">
 			
-			<?php echo '<a href="Wyloguj">Wyloguj się!</a>'; ?><br />
+			<?php echo '<a href="../logout.php">Wyloguj się!</a>'; ?><br />
 			<hr />
 			<a href="Wyszukaj">Wyszukaj pozycje</a><br />
 			<a href="#">Dodaj pozycję</a><br />
