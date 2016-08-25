@@ -10,4 +10,3 @@ RewriteRule Wyniki ?p=szukaj
 RewriteRule Logowanie ?p=zaloguj
 RewriteRule StronaGłówna ?p=main
 RewriteRule Wyloguj ?p=logout
-RewriteRule Pozycje ?b=szukaj_bib
