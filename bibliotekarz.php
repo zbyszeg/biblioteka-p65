@@ -41,10 +41,10 @@
 			<br />
 			<?php echo '<a href="logout.php">Wyloguj się</a>'; ?><br />
 			<hr />
-			<a href="Katalog">Wyszukaj pozycje</a><br />
-			<a href="Dodaj">Dodaj pozycję</a><br />
-			<a href="#">Edytuj pozycję</a><br />
-			<a href="#">Usuń pozycję</a><br />
+			<a href="Katalog">Wyszukaj książki</a><br />
+			<a href="Dodaj">Dodaj książkę</a><br />
+			<a href="#">Edytuj informacje o książce</a><br />
+			<a href="#">Usuń książkę</a><br />
 			<hr />
 			<a href="#">Wypożycz książkę</a><br />
 			<a href="#">Oddaj książkę</a><br />
