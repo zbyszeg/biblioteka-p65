@@ -56,8 +56,7 @@
 		Jej klucze odpowiadaja nazwom kolumn tabeli w bazie. 
 		*/
 
-		if(mysqli_fetch_assoc($result))
-		{
+		
 			while ($myrow = mysqli_fetch_assoc($result))
 			{
 
@@ -89,8 +88,7 @@
 				echo "</p>";
 				echo "<hr />";
 			}
-		}
-		else echo '<span style="font-size: 18px; color: maroon; text-align: center">Nie ma takiej książki</span>';
+		
 		?>
 	</div>	
 </body>

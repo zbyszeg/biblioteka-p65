@@ -12,3 +12,5 @@ RewriteRule StronaGłówna index.php
 RewriteRule Bibliotekarz bibliotekarz.php
 RewriteRule Katalog Bibliotekarz?b=katalog_bib
 RewriteRule Znajdź Bibliotekarz?b=szukaj_bib
+RewriteRule Dodaj Bibliotekarz?b=dodaj
+RewriteRule Dodano Bibliotekarz?b=dodawanie
