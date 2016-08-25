@@ -5,8 +5,6 @@
 </head>
 <body>
 	<div class="wyniki">
-		<a href="Wyszukaj">Powrót do wyszukiwarki</a><br /><br />
-		<hr />
 		<?php
 
 		//Nawiazujemy polaczenie z baza, podajac adres hosta, login oraz haslo.

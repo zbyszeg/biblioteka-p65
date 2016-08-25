@@ -201,20 +201,20 @@ select
 	font-size: 16px;
 }
 
-#wyniki > a
+.wyniki > a
 {
 	color: #1E90FF;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 14px;
 }
 
-#wyniki > a:hover
+.wyniki > a:hover
 {
 	color: gray;
 	text-decoration: underline overline;
 }
 
-#wyniki > hr
+.wyniki > hr
 {
 	border: 0;
 	border-top: 1px solid #8c8c8c;
@@ -240,6 +240,13 @@ select
 	margin-right: 5px;
 	border-radius: 5px;
 	color: white;
+}
+
+#menubar > a
+{
+	color: #001B37;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 14px;
 }
 
 #main
