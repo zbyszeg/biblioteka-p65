@@ -1,6 +1,6 @@
 <div id="szukaj">
 	Wyszukaj pozycję wg:<br />
-	<form name="formularz_szukania" method="post" action="?b=szukaj_bib"> 
+	<form name="formularz_szukania" method="post" action="Wyniki"> 
 	<select name="kryterium">
 	  <option value="autor">autora</option>
 	  <option value="tytul">tytułu</option>

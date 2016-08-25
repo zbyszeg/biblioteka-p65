@@ -8,5 +8,5 @@ RewriteEngine on
 RewriteRule Przeglądaj ?p=katalog
 RewriteRule Wyniki ?p=szukaj
 RewriteRule Logowanie ?p=zaloguj
-RewriteRule StronaGłówna ?p=main
-RewriteRule Wyloguj ?p=logout
+RewriteRule StronaGłówna index.php
+RewriteRule Bibliotekarz bib/bibliotekarz.php

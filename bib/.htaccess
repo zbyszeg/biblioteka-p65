@@ -1,0 +1,11 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule Przeglądaj ?b=katalog_bib
+RewriteRule Wyniki ?b=szukaj_bib
+RewriteRule StronaGłówna ../index.php
+RewriteRule Wyloguj ../logout.php
