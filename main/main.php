@@ -26,7 +26,6 @@
 		?>
 		<br/>
 		<img src="img/logoP.gif" style="width: 150px"/>
-		<div style="color: #BFBFBF; text-align: center; font-size: 10px;">Projekt i wykonanie: Zbigniew Góra</div>
 	</div>
 	<br /><br />
 	<a href="Przeglądaj">Przeglądaj katalog</a><br/>
