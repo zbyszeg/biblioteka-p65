@@ -2,7 +2,7 @@
 	<span style="font-weight: 700; font-size: 15px">Edytuj informacje o książce:</span><br /><br />
 	<form action="Zmieniono" method="post">
 		<table>
-		<tr><td>ID książki, której dotyczy zmiana:&nbsp;</td><td><input type="text" name="id"></td></tr>
+		<tr><td>ID książki, której dotyczy zmiana:&nbsp;</td><td><input type="text" name="id" style="width: 180px"></td></tr>
 		<tr><td>Informacja, która ma być zieniona:&nbsp;</td><td><select name="kryterium">
 				<option value="nr_ewid">numer ewidencyjny</option>
 				<option value="autor">autor</option>
