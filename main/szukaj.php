@@ -47,7 +47,7 @@
 			{
 
 			//Wyswietlamy kolejne elementy tablicy.
-				echo "<p>";
+				
 				echo "Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
 				echo "<br>Autor: ".$myrow["autor"];
 				echo "<br>Tytuł: ".$myrow["tytul"];
@@ -63,7 +63,6 @@
 						echo '<br>Status: <span style="color: red">Wypożyczona</span>';
 					break;
 				}	
-				echo "</p>";
 				echo "<hr />";
 			}
 		

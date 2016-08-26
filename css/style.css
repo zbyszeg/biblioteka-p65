@@ -184,8 +184,6 @@ select
 	background-color: white;
 	width: 450px !important;
 	padding: 35px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 75px;
 	font-size: 14px;
 	font-family: 'Oxygen', sans-serif;
@@ -197,8 +195,6 @@ select
 	background-color: white;
 	width: 450px !important;
 	padding: 35px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 75px;
 	font-family: calibri;
 	font-size: 16px;
@@ -230,21 +226,20 @@ select
 	width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 5px;
 }
 
 #menubar
 {
 	float: left;
 	width: 250px;
-	margin-left: auto;
-	margin-right: auto;
 	background-color: rgb(0, 104, 239);
 	background-color: rgba(0, 104, 239, .5);
 	margin-right: 5px;
 	border-radius: 3px;
 	color: white;
 	border: solid 1px;
+	margin-top: 75px;
+	margin-left: 150px;
 }
 
 #menubar > a
@@ -277,4 +272,10 @@ select
 	padding: 5px;
 	border-radius: 5px;
 	text-align: justify;
+}
+
+#mainbib
+{
+	float: left;
+	margin-left: 20px;
 }

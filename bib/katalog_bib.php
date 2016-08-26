@@ -2,6 +2,7 @@
 	Wyszukaj pozycje wg:<br />
 	<form name="formularz_szukania" method="post" action="Znajdź"> 
 	<select name="kryterium">
+	  <option value="id">ID książki</option>
 	  <option value="autor">autora</option>
 	  <option value="tytul">tytułu</option>
 	  <option value="wydaw">wydawnictwa</option>

@@ -44,23 +44,24 @@
 			<?php echo '<a href="logout.php">Wyloguj się</a>'; ?><br />
 			<hr />
 			<a href="Katalog">Wyszukaj książki</a><br />
+			<a href="Lista">Pokaż wszystkie</a><br />
 			<a href="Dodaj">Dodaj książkę</a><br />
 			<a href="Edytuj">Edytuj informacje o książce</a><br />
-			<a href="#">Usuń książkę</a><br />
+			<a href="Usuń">Usuń książkę</a><br />
 			<hr />
-			<a href="#">Wypożycz książkę</a><br />
-			<a href="#">Oddaj książkę</a><br />
+			<a href="Wypożycz">Wypożycz książkę</a><br />
+			<a href="Oddaj">Oddaj książkę</a><br />
 			<a href="Wypożyczone">Wyświetl wszystkie wypożyczone</a><br />
 			<br />
 		</nav>
-	<section id="mainbib">
+		<section id="mainbib">
 		<?php
 			$strona = isset($_GET['b']) ? basename($_GET['b']) : 'katalog_bib';
  			$plik = 'bib/'.$strona . '.php';
  			include $plik;
 		?>
-	</section>
-	<div style="clear: both;"></div>
-</div>
+		</section>
+		<div style="clear: both;"></div>
+	</div>
 </body>
 </html>

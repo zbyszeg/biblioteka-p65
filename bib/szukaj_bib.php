@@ -6,12 +6,10 @@
 <body>
 	<div class="wyniki">
 		<?php
+		
+		require_once "connect.php";
 
-		//Nawiazujemy polaczenie z baza, podajac adres hosta, login oraz haslo.
-		$conn=mysqli_connect("localhost", "root", "");
-
-		//Wybieramy interesujaca nas baze.
-		mysqli_select_db($conn,"biblioteka");
+		$conn=@new mysqli($host, $db_user, $db_password, $db_name);
 		
 		//ustawiamy poprawne wyświetlanie
 		mysqli_query($conn,"SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
@@ -21,6 +19,10 @@
 
 		switch ($kryterium)
 		{
+		  case "id":  
+		  $result=mysqli_query($conn,"select * from ksiazki where id_ksiazki='$wartosc'");
+		  break;
+		 
 		  case "autor":  
 		  $result=mysqli_query($conn,"select * from ksiazki where autor like '%$wartosc%'");
 		  break;
@@ -60,10 +62,7 @@
 		
 		
 			while ($myrow = mysqli_fetch_assoc($result))
-			{
-
-			//Wyswietlamy kolejne elementy tablicy.
-				echo "<p>";
+			{	
 				echo "ID książki: ".$myrow["id_ksiazki"];
 				echo "<br>Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
 				echo "<br>Autor: ".$myrow["autor"];
@@ -88,10 +87,8 @@
 					echo "<br>Czytelnik: ".$myrow["czytelnik"];
 					echo "<br>Data wypożyczenia: ".$myrow["data"];
 				}
-				echo "</p>";
 				echo "<hr />";
-			}
-		
+			}	
 		?>
 	</div>	
 </body>

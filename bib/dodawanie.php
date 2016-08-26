@@ -1,8 +1,9 @@
 <div class="wyniki">
 	<?php
 		
-		$conn=mysqli_connect("localhost", "root", "");
-		mysqli_select_db($conn,"biblioteka");
+		require_once "connect.php";
+
+		$conn=@new mysqli($host, $db_user, $db_password, $db_name);
 		mysqli_query($conn,"SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
 		
 		$nr_ewid = $_POST['nr_ewid'];
