@@ -4,16 +4,14 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<div class="wyniki">
+	<div class="wyniki" id="widok">
 		<a href="Przeglądaj">Powrót do wyszukiwarki</a><br /><br />
 		<hr />
 		<?php
 
-		//Nawiazujemy polaczenie z baza, podajac adres hosta, login oraz haslo.
-		$conn=mysqli_connect("localhost", "root", "");
+		require_once "connect.php";
 
-		//Wybieramy interesujaca nas baze.
-		mysqli_select_db($conn,"biblioteka");
+		$conn=@new mysqli($host, $db_user, $db_password, $db_name);
 		
 		//ustawiamy poprawne wyświetlanie
 		mysqli_query($conn,"SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
