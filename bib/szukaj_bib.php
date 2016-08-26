@@ -64,7 +64,8 @@
 
 			//Wyswietlamy kolejne elementy tablicy.
 				echo "<p>";
-				echo "Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
+				echo "ID książki: ".$myrow["id_ksiazki"];
+				echo "<br>Nr ewidencyjny: ".$myrow["nr_ewidencyjny"];
 				echo "<br>Autor: ".$myrow["autor"];
 				echo "<br>Tytuł: ".$myrow["tytul"];
 				echo "<br>Wydawnictwo: ".$myrow["wydawnictwo"];
@@ -85,7 +86,7 @@
 				if($myrow["status"]==2)
 				{
 					echo "<br>Czytelnik: ".$myrow["czytelnik"];
-					echo "<br>Data wypozyczenia: ".$myrow["data"];
+					echo "<br>Data wypożyczenia: ".$myrow["data"];
 				}
 				echo "</p>";
 				echo "<hr />";

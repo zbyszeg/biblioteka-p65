@@ -14,3 +14,6 @@ RewriteRule Katalog Bibliotekarz?b=katalog_bib
 RewriteRule Znajdź Bibliotekarz?b=szukaj_bib
 RewriteRule Dodaj Bibliotekarz?b=dodaj
 RewriteRule Dodano Bibliotekarz?b=dodawanie
+RewriteRule Edytuj Bibliotekarz?b=edytuj
+RewriteRule Zmieniono Bibliotekarz?b=zmiana
+RewriteRule Wypożyczone Bibliotekarz?b=wypozyczone

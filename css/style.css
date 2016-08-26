@@ -182,7 +182,7 @@ select
 .szukaj
 {
 	background-color: white;
-	width: 410px;
+	width: 450px !important;
 	padding: 35px;
 	margin-left: auto;
 	margin-right: auto;
@@ -195,12 +195,11 @@ select
 .wyniki
 {
 	background-color: white;
-	width: 600px;
+	width: 450px !important;
 	padding: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 75px;
 	font-family: calibri;
 	font-size: 16px;
 	border-radius: 3px;

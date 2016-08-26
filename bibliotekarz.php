@@ -39,16 +39,18 @@
 	<div id="kontener">
 		<nav id="menubar">
 			<br />
+			<div style="text-align: center"><img src="img/logoP.gif" style="width: 150px"/></div>
+			<hr />
 			<?php echo '<a href="logout.php">Wyloguj się</a>'; ?><br />
 			<hr />
 			<a href="Katalog">Wyszukaj książki</a><br />
 			<a href="Dodaj">Dodaj książkę</a><br />
-			<a href="#">Edytuj informacje o książce</a><br />
+			<a href="Edytuj">Edytuj informacje o książce</a><br />
 			<a href="#">Usuń książkę</a><br />
 			<hr />
 			<a href="#">Wypożycz książkę</a><br />
 			<a href="#">Oddaj książkę</a><br />
-			<a href="#">Wyświetl wszystkie wypożyczone</a><br />
+			<a href="Wypożyczone">Wyświetl wszystkie wypożyczone</a><br />
 			<br />
 		</nav>
 	<section id="mainbib">
