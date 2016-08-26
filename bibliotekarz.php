@@ -52,7 +52,8 @@
 			<a href="Wypożycz">Wypożycz książkę</a><br />
 			<a href="Oddaj">Oddaj książkę</a><br />
 			<a href="Wypożyczone">Wyświetl wszystkie wypożyczone</a><br />
-			<br />
+			<hr />
+			<div style="color: #E5E5E5; text-align: center; font-size: 9px; font-family: 'Oxygen', sans-serif"><p>Projekt i wykonanie: <a href="mailto:zbyszek.gora@gmail.com" style="color: #212121">Zbigniew Góra</a></p></div>
 		</nav>
 		<section id="mainbib">
 		<?php
