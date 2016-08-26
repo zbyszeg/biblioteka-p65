@@ -279,3 +279,9 @@ select
 	float: left;
 	margin-left: 20px;
 }
+
+#unlog
+{
+	margin-left: auto;
+	margin-right: auto;
+}

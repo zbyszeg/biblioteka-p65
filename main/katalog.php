@@ -1,4 +1,4 @@
-<div class="szukaj">
+<div class="szukaj" id="unlog">
 	Wyszukaj pozycję wg:<br />
 	<form name="formularz_szukania" method="post" action="Wyniki"> 
 	<select name="kryterium">
