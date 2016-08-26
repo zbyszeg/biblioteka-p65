@@ -1,23 +1,24 @@
+
 -- phpMyAdmin SQL Dump
--- version 4.5.1
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Czas generowania: 26 Sie 2016, 14:58
--- Wersja serwera: 10.1.13-MariaDB
--- Wersja PHP: 7.0.8
+-- Host: localhost
+-- Czas wygenerowania: 26 Sie 2016, 15:25
+-- Wersja serwera: 10.0.20-MariaDB
+-- Wersja PHP: 5.2.17
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
 
 --
--- Baza danych: `biblioteka`
+-- Baza danych: `u432478404_bibli`
 --
 
 -- --------------------------------------------------------
@@ -26,8 +27,8 @@ SET time_zone = "+00:00";
 -- Struktura tabeli dla tabeli `ksiazki`
 --
 
-CREATE TABLE `ksiazki` (
-  `id_ksiazki` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `ksiazki` (
+  `id_ksiazki` int(11) NOT NULL AUTO_INCREMENT,
   `nr_ewidencyjny` int(11) NOT NULL,
   `autor` varchar(100) COLLATE utf8_polish_ci DEFAULT NULL,
   `tytul` varchar(100) COLLATE utf8_polish_ci NOT NULL,
@@ -36,8 +37,9 @@ CREATE TABLE `ksiazki` (
   `rok_wydania` int(4) DEFAULT NULL,
   `status` int(1) DEFAULT '1',
   `czytelnik` varchar(50) COLLATE utf8_polish_ci NOT NULL,
-  `data` date DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+  `data` date DEFAULT NULL,
+  PRIMARY KEY (`id_ksiazki`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=769 ;
 
 --
 -- Zrzut danych tabeli `ksiazki`
@@ -108,7 +110,7 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (62, 819, 'Bourgeois Paulette, Clark Brenda', 'Franklin i jego sąsiedzi', NULL, '', NULL, 1, '', '0000-00-00'),
 (63, 820, 'Bourgeois Paulette, Clark Brenda', 'Franklin mały chwalipięta ', NULL, '', NULL, 1, '', '0000-00-00'),
 (64, 821, 'Bourgeois Paulette, Clark Brenda', 'Franklin i złoty interes', NULL, '', NULL, 1, '', '0000-00-00'),
-(65, 822, 'Bourgeois Paulette, Clark Brenda', 'Franklin sadzi drzewko', NULL, '', NULL, 1, '', '0000-00-00'),
+(65, 83, 'Bourgeois Paulette, Clark Brenda', 'Franklin sadzi drzewko', '>DEBIT<', '83-7167-265-9', NULL, 2, 'Dominika Góra', '2016-08-26'),
 (66, 823, 'Bourgeois Paulette, Clark Brenda', 'Franklin i prezent świąteczny', NULL, '', NULL, 1, '', '0000-00-00'),
 (67, 824, 'Bourgeois Paulette, Clark Brenda', 'Franklin mówi „kocham cię”', NULL, '', NULL, 1, '', '0000-00-00'),
 (68, 825, 'Bourgeois Paulette, Clark Brenda', 'Franklin i jego paczka', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -482,7 +484,8 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (436, 591, 'Miksza Małgorzata', 'Zrozumieć Montessori', NULL, '', NULL, 1, '', '0000-00-00'),
 (437, 287, 'Mikuta Marian', 'Kultura żywego słowa', NULL, '', NULL, 1, '', '0000-00-00'),
 (438, 288, 'Misiewicz Halina', 'Dlaczego dziecko ucieka z domu', NULL, '', NULL, 1, '', '0000-00-00'),
-(439, 289, 'Misiurska Anna', 'Zabawka ze skrawka', NULL, '', NULL, 1, '', '0000-00-00'),
+(439, 289, 'Misiurska Anna', 'Zabawka ze skrawka', NULL, '', NULL, 1, '', '0000-00-00');
+INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawnictwo`, `isbn`, `rok_wydania`, `status`, `czytelnik`, `data`) VALUES
 (440, 806, 'Mitros Katarzyna', 'Jak wychować geniusza przez zabawę', NULL, '', NULL, 1, '', '0000-00-00'),
 (441, 607, 'Molenda Maria', 'Mandala', NULL, '', NULL, 1, '', '0000-00-00'),
 (442, 290, 'Moroz Henryk', 'Z doświadczeń nad modernizacją nauczania początkowego matematyki', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -490,8 +493,7 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (444, 292, 'Moroz Henryk', 'Rozwijanie pojęć matematycznych u dzieci w wieku przedszkolnym', NULL, '', NULL, 1, '', '0000-00-00'),
 (445, 293, 'Moroz Henryk', 'Rozwijanie pojęć matematycznych w wieku przedszkolnym', NULL, '', NULL, 1, '', '0000-00-00'),
 (446, 294, 'Moroz Henryk', 'Współczesne środki dydaktyczne w nauczaniu początkowym matematyki', NULL, '', NULL, 1, '', '0000-00-00'),
-(447, 295, 'Muchacka Bożena', 'Zabawy badawcze w edukacji przedszkolnej', NULL, '', NULL, 1, '', '0000-00-00');
-INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawnictwo`, `isbn`, `rok_wydania`, `status`, `czytelnik`, `data`) VALUES
+(447, 295, 'Muchacka Bożena', 'Zabawy badawcze w edukacji przedszkolnej', NULL, '', NULL, 1, '', '0000-00-00'),
 (448, 296, 'Muszyński Heliodor', 'Zarys teorii wychowania', NULL, '', NULL, 1, '', '0000-00-00'),
 (449, 297, 'Muszyński Heliodor', 'Zarys teorii wychowania', NULL, '', NULL, 1, '', '0000-00-00'),
 (450, 298, 'Muszyński Heliodor', 'Wychowanie moralne w zespole', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -812,11 +814,13 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 -- Struktura tabeli dla tabeli `uzytkownicy`
 --
 
-CREATE TABLE `uzytkownicy` (
-  `id` int(11) NOT NULL,
+CREATE TABLE IF NOT EXISTS `uzytkownicy` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user` text COLLATE utf8_polish_ci NOT NULL,
-  `pass` text COLLATE utf8_polish_ci NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+  `pass` text COLLATE utf8_polish_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=11 ;
 
 --
 -- Zrzut danych tabeli `uzytkownicy`
@@ -825,37 +829,6 @@ CREATE TABLE `uzytkownicy` (
 INSERT INTO `uzytkownicy` (`id`, `user`, `pass`) VALUES
 (1, 'bibliotekarz', '51e0e0b3d478c5b3cf029531c294bec8');
 
---
--- Indeksy dla zrzutów tabel
---
-
---
--- Indexes for table `ksiazki`
---
-ALTER TABLE `ksiazki`
-  ADD PRIMARY KEY (`id_ksiazki`);
-
---
--- Indexes for table `uzytkownicy`
---
-ALTER TABLE `uzytkownicy`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `id` (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT dla tabeli `ksiazki`
---
-ALTER TABLE `ksiazki`
-  MODIFY `id_ksiazki` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=769;
---
--- AUTO_INCREMENT dla tabeli `uzytkownicy`
---
-ALTER TABLE `uzytkownicy`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

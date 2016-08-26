@@ -59,8 +59,8 @@
 		*/
 
 		
-		
-		
+		if (mysqli_num_rows($result)>0)
+		{
 			while ($myrow = mysqli_fetch_assoc($result))
 			{	
 				echo "ID książki: ".$myrow["id_ksiazki"];
@@ -88,7 +88,10 @@
 					echo "<br>Data wypożyczenia: ".$myrow["data"];
 				}
 				echo "<hr />";
-			}	
+			}
+		}
+		else
+			echo "Nie ma takiej książki.";
 		?>
 	</div>	
 </body>
