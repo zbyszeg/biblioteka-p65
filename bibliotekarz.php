@@ -40,7 +40,7 @@
 		<nav id="menubar">
 			<br />
 			<div style="text-align: center"><img src="img/logoP.gif" style="width: 150px"/></div>
-			<div style="color: #BFBFBF; text-align: center; font-size: 10px;">Projekt i wykonanie: Zbigniew Góra</div>
+			<div style="color: #BFBFBF; text-align: center; font-size: 10px; font-family: 'Oxygen', sans-serif">Projekt i wykonanie: Zbigniew Góra</div>
 			<hr />
 			<?php echo '<a href="logout.php">Wyloguj się</a>'; ?><br />
 			<hr />
