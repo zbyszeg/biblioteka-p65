@@ -15,7 +15,7 @@
 		
 		if ((!$_POST['nr_ewid']) || (!$_POST['autor']) || (!$_POST['tytul']))
 		{
-			$_SESSION['pusto'] = '<span style="color:red">Pola <i>Autor</i>, <i>Tytuł</i> oraz <i>Numer ewidencyjny</i> nie mogą być puste!</span>';
+			$_SESSION['pusto'] = '<span style="color:red">Pola &bdquo;Autor&rdquo;, &bdquo;Tytuł&rdquo; oraz &bdquo;Numer ewidencyjny&rdquo; nie mogą być puste!</span>';
 			header('Location: Dodaj');
 			exit();
 		}

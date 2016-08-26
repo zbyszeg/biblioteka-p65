@@ -6,7 +6,7 @@
 		<tr><td>Informacja, która ma być zieniona:&nbsp;</td><td><select name="kryterium">
 				<option value="nr_ewid">numer ewidencyjny</option>
 				<option value="autor">autor</option>
-				<option value="tytul">tytul</option>
+				<option value="tytul">tytuł</option>
 				<option value="wydawnictwo">wydawnictwo</option>
 				<option value="isbn">numer ISBN</option>
 				<option value="rok_wyd">rok wydania</option>
