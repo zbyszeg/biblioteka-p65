@@ -1,6 +1,6 @@
 body
 {
-	background-image: url("../img/tlo.jpg");
+	background-image: url("../img/tlo32.jpg");
 	background-attachment: fixed;
 	margin: 0 !important;
 }
@@ -29,7 +29,7 @@ body
 #dom:hover
 {
 	cursor: pointer;
-	background-color: #018afe;
+	background-color: #3571b7;
 }
 
 #mail
@@ -47,7 +47,7 @@ body
 #mail:hover
 {
 	cursor: pointer;
-	background-color: #018afe;
+	background-color: #3571b7;
 }
 
 #logo
@@ -60,7 +60,7 @@ body
 
 #logo:hover
 {
-	background-color: #018afe;
+	background-color: #3571b7;
 }
 
 #fb
@@ -73,7 +73,7 @@ body
 
 #fb:hover
 {
-	background-color: #018afe;
+	background-color: #3571b7;
 }
 
 #pojemnik
@@ -89,12 +89,12 @@ body
 
 #mainp > a
 {
-	color: #001B37;
+	color: #FFFFFF;
 }
 
 #mainp > a:hover
 {
-	color: darkgray;
+	color: lightgray;
 	text-decoration: underline overline;
 }
 
@@ -147,7 +147,7 @@ input[type=password]
 input[type=submit]
 {
 	width: 300px;
-	background-color: #1E90FF;
+	background-color: #668cb1;
 	font-size:16px;
 	color: white;
 	padding: 5px;
@@ -161,7 +161,7 @@ input[type=submit]
 
 input[type=submit]:hover
 {
-	background-color: #56ACFF;
+	background-color: #9CB1C6;
 }
 
 select
@@ -232,8 +232,8 @@ select
 {
 	float: left;
 	width: 250px;
-	background-color: rgb(0, 104, 239);
-	background-color: rgba(0, 104, 239, .5);
+	background-color: rgb(130, 230, 255);
+	background-color: rgba(130, 230, 255, .3);
 	margin-right: 5px;
 	border-radius: 3px;
 	color: white;
@@ -244,7 +244,7 @@ select
 
 #menubar > a
 {
-	color: black;
+	color: #FFFFFF;
 	font-family: 'Calibri', sans-serif;
 	font-size: 16px;
 	padding: 10px;
@@ -290,4 +290,41 @@ select
 {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#podpis
+{
+	color: #A5A5A5;
+	text-align: center;
+	font-size: 9px;
+}
+
+#podpis > a
+{
+	color: #4D4D4D;
+}
+
+#podpis > a:hover
+{
+	color: #4D4D4D;
+	text-decoration: underline overline;
+}
+
+#podpis2
+{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 9px;
+	font-family: 'Oxygen', sans-serif
+}
+
+#podpis2 > p > a
+{
+	color: #D2D2D2;
+}
+
+#podpis2 > p > a:hover
+{
+	color: #D2D2D2;
+	text-decoration: underline overline;
 }

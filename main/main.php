@@ -26,7 +26,7 @@
 		?>
 		<br/>
 		<img src="img/logoP.gif" style="width: 150px"/>
-		<div style="color: #A5A5A5; text-align: center; font-size: 9px;">Projekt i wykonanie: <a href="mailto:zbyszek.gora@gmail.com" style="color: #4D4D4D">Zbigniew Góra</a></div>
+		<div id="podpis">Projekt i wykonanie: <a href="mailto:zbyszek.gora@gmail.com">Zbigniew Góra</a></div>
 	</div>
 	<br /><br />
 	<a href="Przeglądaj">Przeglądaj katalog</a><br/>

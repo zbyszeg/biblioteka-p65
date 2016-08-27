@@ -39,7 +39,7 @@
 	<div id="kontener">
 		<nav id="menubar">
 			<br />
-			<div style="text-align: center"><img src="img/logoP.gif" style="width: 150px"/></div>
+			<div style="text-align: center"><img src="img/logoP2.gif" style="width: 150px"/></div>
 			<hr />
 			<?php echo '<a href="logout.php">Wyloguj się</a>'; ?><br />
 			<hr />
@@ -53,7 +53,7 @@
 			<a href="Oddaj">Oddaj książkę</a><br />
 			<a href="Wypożyczone">Wyświetl wszystkie wypożyczone</a><br />
 			<hr />
-			<div style="color: #E5E5E5; text-align: center; font-size: 9px; font-family: 'Oxygen', sans-serif"><p>Projekt i wykonanie: <a href="mailto:zbyszek.gora@gmail.com" style="color: #212121">Zbigniew Góra</a></p></div>
+			<div id="podpis2"><p>Projekt i wykonanie: <a href="mailto:zbyszek.gora@gmail.com">Zbigniew Góra</a></p></div>
 		</nav>
 		<section id="mainbib">
 		<?php
