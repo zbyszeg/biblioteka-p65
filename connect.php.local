@@ -1,8 +1,0 @@
-<?php
-
-	$host = "localhost";
-	$db_user = "root";
-	$db_password = "baranek0207";
-	$db_name = "biblioteka";
-
-?>

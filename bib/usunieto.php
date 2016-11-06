@@ -18,6 +18,6 @@
 			echo "Książka została usunięta z biblioteki. Możesz ją jednak dodać ponownie.";
 		}
 		else
-			echo "Błąd! Prawodpodobnie nie ma w bibliotece książki o ID $id.";
+			echo "<span style='color: red; font-weight: 700'>Błąd!</span><br><br><span style='font-weight: 700'>Prawdopodobnie w bibliotece nie ma książki o podanym ID lub numer nie został wprowadzony.</span>";
 	?>
 </div>
