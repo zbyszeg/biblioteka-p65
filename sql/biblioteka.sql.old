@@ -4,9 +4,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 06, 2016 at 02:11 PM
--- Server version: 10.0.20-MariaDB
--- PHP Version: 5.2.17
+-- Czas wygenerowania: 26 Sie 2016, 15:25
+-- Wersja serwera: 10.0.20-MariaDB
+-- Wersja PHP: 5.2.17
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `u432478404_bibli`
+-- Baza danych: `u432478404_bibli`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ksiazki`
+-- Struktura tabeli dla tabeli `ksiazki`
 --
 
 CREATE TABLE IF NOT EXISTS `ksiazki` (
@@ -32,17 +32,17 @@ CREATE TABLE IF NOT EXISTS `ksiazki` (
   `nr_ewidencyjny` int(11) NOT NULL,
   `autor` varchar(100) COLLATE utf8_polish_ci DEFAULT NULL,
   `tytul` varchar(100) COLLATE utf8_polish_ci NOT NULL,
-  `wydawnictwo` varchar(50) COLLATE utf8_polish_ci DEFAULT NULL,
+  `wydawnictwo` varchar(20) COLLATE utf8_polish_ci DEFAULT NULL,
   `isbn` varchar(50) COLLATE utf8_polish_ci NOT NULL,
   `rok_wydania` int(4) DEFAULT NULL,
   `status` int(1) DEFAULT '1',
   `czytelnik` varchar(50) COLLATE utf8_polish_ci NOT NULL,
   `data` date DEFAULT NULL,
   PRIMARY KEY (`id_ksiazki`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=780 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=769 ;
 
 --
--- Dumping data for table `ksiazki`
+-- Zrzut danych tabeli `ksiazki`
 --
 
 INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawnictwo`, `isbn`, `rok_wydania`, `status`, `czytelnik`, `data`) VALUES
@@ -110,7 +110,7 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (62, 819, 'Bourgeois Paulette, Clark Brenda', 'Franklin i jego sąsiedzi', NULL, '', NULL, 1, '', '0000-00-00'),
 (63, 820, 'Bourgeois Paulette, Clark Brenda', 'Franklin mały chwalipięta ', NULL, '', NULL, 1, '', '0000-00-00'),
 (64, 821, 'Bourgeois Paulette, Clark Brenda', 'Franklin i złoty interes', NULL, '', NULL, 1, '', '0000-00-00'),
-(65, 83, 'Bourgeois Paulette, Clark Brenda', 'Franklin sadzi drzewko', '>DEBIT<', '83-7167-265-9', 2001, 1, '', '0000-00-00'),
+(65, 83, 'Bourgeois Paulette, Clark Brenda', 'Franklin sadzi drzewko', '>DEBIT<', '83-7167-265-9', NULL, 2, 'Dominika Góra', '2016-08-26'),
 (66, 823, 'Bourgeois Paulette, Clark Brenda', 'Franklin i prezent świąteczny', NULL, '', NULL, 1, '', '0000-00-00'),
 (67, 824, 'Bourgeois Paulette, Clark Brenda', 'Franklin mówi „kocham cię”', NULL, '', NULL, 1, '', '0000-00-00'),
 (68, 825, 'Bourgeois Paulette, Clark Brenda', 'Franklin i jego paczka', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -683,7 +683,7 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (634, 435, 'Tałyzina N. F.', 'Kierowanie procesem przyswajania wiedzy', NULL, '', NULL, 1, '', '0000-00-00'),
 (635, 436, 'Taylor Barbara', 'Uprawa roślin (Zabawa i nauka)', NULL, '', NULL, 1, '', '0000-00-00'),
 (636, 437, 'Taylor Barbara', 'Baterie i magnesy (Zabawa i nauka)', NULL, '', NULL, 1, '', '0000-00-00'),
-(637, 438, 'Taylor Barbara', 'Zabawa i nauka. Kolor i światło.', 'Polska Oficyna Wydawnicza "BGW"', '83-7066-147-5', 1991, 2, 'Dominika Góra', '2016-08-26'),
+(637, 438, 'Taylor Barbara', 'Kolor i światło (Zabawa i nauka)', NULL, '', NULL, 1, '', '0000-00-00'),
 (638, 439, 'Taylor Barbara', 'Powietrze i latanie (Zabawa i nauka)', NULL, '', NULL, 1, '', '0000-00-00'),
 (639, 541, 'Techner-SędzickaIwona, Główczewska Daria', '111 zabaw w edukacji europejskiej', NULL, '', NULL, 1, '', '0000-00-00'),
 (640, 550, 'Thanhoffer M., Reichel G., Rabenstein R.', 'Nauczanie kreatywne cz. 1', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -723,7 +723,7 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (674, 854, 'Wesołowska Anna Maria', 'Bezpieczeństwo młodzieży – poradnik prawny', NULL, '', NULL, 1, '', '0000-00-00'),
 (675, 451, 'Wiatr Jerzy', 'Społeczeństwo – wstęp do socjologii systematycznej', NULL, '', NULL, 1, '', '0000-00-00'),
 (676, 452, 'Wichura Helena', 'Modele lekcji w nauczaniu początkowym', NULL, '', NULL, 1, '', '0000-00-00'),
-(677, 919, 'Wierzbowska Ewa Małgorzata', 'Księga przysłów. Co to znaczy?', 'Publicat S. A.', '978-83-245-7069-0', 2010, 2, 'Dominika Góra', '2016-08-26'),
+(677, 919, 'Wierzbowska E.M.', 'Księga przysłów', NULL, '', NULL, 1, '', '0000-00-00'),
 (678, 453, 'Więckowski Ryszard', 'Elementy systemu nauczania początkowego', NULL, '', NULL, 1, '', '0000-00-00'),
 (679, 454, 'Wilgocka-Okoń Barbara', 'Zasób umysłowy dzieci dawniej i dziś', NULL, '', NULL, 1, '', '0000-00-00'),
 (680, 455, 'Witkowska Sabina', 'Odżywianie niemowląt i dzieci starszych', NULL, '', NULL, 1, '', '0000-00-00'),
@@ -806,23 +806,12 @@ INSERT INTO `ksiazki` (`id_ksiazki`, `nr_ewidencyjny`, `autor`, `tytul`, `wydawn
 (757, 927, '', 'Kodeks pracy.', NULL, '', NULL, 1, '', '0000-00-00'),
 (758, 928, '', 'Kodeks rodzinny i opiekuńczy.', NULL, '', NULL, 1, '', '0000-00-00'),
 (759, 929, '', 'Konstytucja Rzeczypospolitej Polskiej', NULL, '', NULL, 1, '', '0000-00-00'),
-(760, 938, 'Materiały z XXXII Zjazdu Naukowego Polskiego Towarzystwa Psychologicznego', 'Żyć wspólnie', NULL, '', NULL, 1, '', '0000-00-00'),
-(769, 955, 'Brigitte Wilmes-Mielenhausen', '"Nowe gry i zabawy ćwiczące odwagę"', '', '', 0, 1, '', '0000-00-00'),
-(770, 956, 'Petra Stamer-Brandt', '"Nowe gry i zabawy rozładowujące złość"', '', '', 0, 1, '', '0000-00-00'),
-(771, 957, 'Agnieszka Gąstoł, Aneta Jegier', '"Mój złośnik, czyli jak nauczyć dzieci mądrego radzenia sobie ze złością"', '', '', 0, 1, '', '0000-00-00'),
-(772, 974, 'Aleksandra i Daniel Mizielińscy', '"Mapy - obrazkowa podróż po lądach, morzach i kulturach świata"', '', '', 0, 1, '', '0000-00-00'),
-(773, 973, 'Wydawnictwo Harmonia', '"Wiem, jak się zachować". Pomoce do nauki zasad odpowiedniego zachowania w niebezpiecznych i trudnyc', '', '', 0, 1, '', '0000-00-00'),
-(774, 972, 'Anna Jankowska', '"Placówka rewelacyjna. Zarządzanie wizerunkiem placówki edukacyjnej"', '', '', 0, 1, '', '0000-00-00'),
-(775, 971, 'Przemysław Bąbel, Marzena Wiśniak', '"12 zasad skutecznej edukacji. Czyli jak uczyć, żeby nauczyć"', '', '', 0, 1, '', '0000-00-00'),
-(776, 970, 'Marzena Żylińska', '"Neurodydaktyka". Nauczanie i uczenie się przyjazne mózgowi.', '', '', 0, 1, '', '0000-00-00'),
-(777, 969, 'Gerald Huther, Uli Hauser', '"Wszystkie dzieci są zdolne"', '', '', 0, 1, '', '0000-00-00'),
-(778, 968, 'Lilianna Kupaj, Wiesława Krysa', '"Kompetencje trenerskie w pracy nauczyciela. Jak zmotywować ucznia do nauki."', '', '', 0, 1, '', '0000-00-00'),
-(779, 967, 'Lilianna Kupaj, Wiesława Krysa', '"Kompetencje coachingowe nauczyciela. Jak rozwijać potencjał ucznia w szkole."', '', '', 0, 1, '', '0000-00-00');
+(760, 938, 'Materiały z XXXII Zjazdu Naukowego Polskiego Towarzystwa Psychologicznego', 'Żyć wspólnie', NULL, '', NULL, 1, '', '0000-00-00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `uzytkownicy`
+-- Struktura tabeli dla tabeli `uzytkownicy`
 --
 
 CREATE TABLE IF NOT EXISTS `uzytkownicy` (
@@ -834,7 +823,7 @@ CREATE TABLE IF NOT EXISTS `uzytkownicy` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=11 ;
 
 --
--- Dumping data for table `uzytkownicy`
+-- Zrzut danych tabeli `uzytkownicy`
 --
 
 INSERT INTO `uzytkownicy` (`id`, `user`, `pass`) VALUES

@@ -148,7 +148,9 @@ input[type=submit]
 {
 	width: 300px;
 	background-color: #668cb1;
-	font-size:16px;
+	font-family: 'Oxygen';
+    font-weight: 700;
+    font-size:15px;
 	color: white;
 	padding: 5px;
 	margin-top: 15px;
@@ -198,8 +200,8 @@ select
 	padding: 35px;
 	margin-top: 75px;
 	margin-bottom: 75px;
-	font-family: calibri;
-	font-size: 16px;
+	font-family: 'Noto sans';
+	font-size: 15px;
 	border-radius: 3px;
 }
 
@@ -247,9 +249,10 @@ select
 #menubar > a
 {
 	color: #FFFFFF;
-	font-family: 'Calibri', sans-serif;
-	font-size: 16px;
+	font-family: 'Oxygen';
+	font-size: 15px;
 	padding: 10px;
+    line-height: 0.57cm;
 }
 
 #menubar > hr
